@@ -1,4 +1,5 @@
-{
+{ 
+    "editor.fontSize": 16,
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": false,
     "update.showReleaseNotes": false,
@@ -9,6 +10,7 @@
     "terminal.integrated.cursorWidth": 2,
     "terminal.integrated.enableFileLinks": true,
     "terminal.integrated.scrollback": 50,
+    "terminal.integrated.fontSize":16
 
     "editor.minimap.enabled": false,
     "editor.find.seedSearchStringFromSelection": "selection",
