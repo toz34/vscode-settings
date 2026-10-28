@@ -1,5 +1,4 @@
-{ 
-    "editor.fontSize": 16,
+{
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": false,
     "update.showReleaseNotes": false,
@@ -10,7 +9,6 @@
     "terminal.integrated.cursorWidth": 2,
     "terminal.integrated.enableFileLinks": true,
     "terminal.integrated.scrollback": 50,
-    "terminal.integrated.fontSize":16
 
     "editor.minimap.enabled": false,
     "editor.find.seedSearchStringFromSelection": "selection",
@@ -61,8 +59,9 @@
     "python.analysis.autoImportCompletions": true,
     "python.analysis.completeFunctionParens": true,
     "python.analysis.importFormat": "absolute",
-
     "python.analysis.indexing": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.packageIndexDepths": [
         {
             "name": "aiogram",
@@ -74,4 +73,31 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
+
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/*/*.html": "django-html",
+        "**/templates/*/*/*.html": "django-html",
+        "**/templates/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "django.snippets.exclude": [
+        "cms",
+        "wagtail"
+    ],
+
+
+    "[django-html]": {
+        "editor.defaultFormatter": "batisteo.vscode-django",
+        "breadcrumbs.showClasses": true,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    }
 }
+
